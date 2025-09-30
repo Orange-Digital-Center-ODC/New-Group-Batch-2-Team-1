@@ -1,0 +1,4 @@
+body{
+    background-color: #ffd700;
+    background: linear-gradient(to top, gold, yellow); animation: alternate;
+}
