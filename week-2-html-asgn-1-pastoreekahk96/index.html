@@ -7,70 +7,56 @@
     <title>FC Fassel - Home</title>
   </head>
   <body>
-    <header class="container">
-      <section class="Logo">
-        <figure>
-          <img
-            src="images_file/Fassell_logo.png"
-            alt="Fassel Official Team Logo"
-            />
-          <figcaption>The Official Team Logo of FC Fassell</figcaption>
-        </figure>
-      </section>
-      
-      <nav class="nav">
-        <ul >
-          <li>
-            <a href="about.html">About</a>
-          </li>
 
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-        </ul>
-      </nav>
-      <h1>WELCOME TO THE HOME OF FC FASSELL!</h1>
+    <header class="header">
+            <h1 class="logo">FC Fassell</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
     </header>
+<!--<h1>WELCOME TO THE HOME OF FC FASSELL!</h1>-->
 
-    <main>
-      <section>
-        <h2>FC Fassell — Pride of Monrovia</h2>
+ <main class="main-container">
+        <section class="main-content">
+            <img src="./images_file/Fassell_Team.jpg" alt="sd">
+            <span>
+                <h1>FC Fassell — Pride of Monrovia</h1>
+                <p>FC Fassell is a professional football club from Monrovia, Liberia,
+                    known for its fast-paced attack, passionate fans, and commitment to
+                    youth development. Founded with a vision to raise local talent, FC
+                    Fassell competes in national competitions and has become one of
+                    Liberia’s most respected clubs.
+                !</p>
+                <button>Contact Us</button>    
+            </span>
+        </section>
 
-        <p>
-          FC Fassell is a professional football club from Monrovia, Liberia,
-          known for its fast-paced attack, passionate fans, and commitment to
-          youth development. Founded with a vision to raise local talent, FC
-          Fassell competes in national competitions and has become one of
-          Liberia’s most respected clubs.
-        </p>
-        <p>
-          <strong
-            >Official club crest • Community-driven • Youth development</strong
-          >
-        </p>
-      </section>
+         <section class="team-highlights-container">
+            <h1>Team's Highlights</h1>
+            <div class="team-img">
+                <span>
+                  <img src="./images_file/Fassell_Team.jpg" alt="">
+                  <p>2024 — Finished top 4 in the Liberian National League.</p>
+                </span>
+               <span>
+                  <img src="./images_file/Champiom_FC_Fassell.jpeg" alt="">
+                  <p>2023 — Won the Monrovia Cup (Friendly Tournament).</p>
+                </span>
+                 <span>
+                  <img src="./images_file/Fassell_Home_Jessey.jpeg" alt="">
+                  <p>Ongoing — Community coaching clinics across Montserrado.</p>
+                </span>
+                </div>
+        </section>
 
-      <section>
-        <h3>Recent Highlights:</h3>
-        <ul>
-          <li>2024 — Finished top 4 in the Liberian National League.</li>
-
-          <li>2024 — Youth academy promoted 5 players to the senior team.</li>
-
-          <li>2023 — Won the Monrovia Cup (Friendly Tournament).</li>
-
-          <li>Ongoing — Community coaching clinics across Montserrado.</li>
-        </ul>
-      </section>      
-
-      <section>
-        <iframe
-          width="460"
-          height="215"
+          <section class="team-video">
+        <iframe 
+          width="800" 
+          height="450"
           src="https://www.youtube.com/embed/mykhNhnrcnw?si=3EJcfZM2Uo7Ua-Xx"
           title="FC Fassell - Official Team Video"
           frameborder="0"
@@ -78,15 +64,19 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <figcaption>FC Fassell - Official Team Video</figcaption>
+        <p>FC Fassell - Official Team Video</p>
       </section>
 
-    <audio controls>
-      <source src ="./audios_file/comentary.m4a" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    </main>
-    <footer>
+        <audio class="team-audio" controls>
+          <source src ="./audios_file/comentary.m4a" type="audio/mpeg">
+        </audio>
+  </main>
+         <!--<strong>Official club crest • Community-driven • Youth development</strong--> 
+
+    <footer class="footer">
       <p>&copy; 2024 FC Fassell. All rights reserved.</p>
+    </footer>
+
+
   </body>
 </html>

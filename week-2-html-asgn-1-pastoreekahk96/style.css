@@ -1,4 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: #ffd700;
-    background: linear-gradient(to top, gold, yellow); animation: alternate;
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+    color: black;
+    padding: 30px 160px;
+
+}
+.logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-container{
+    padding: 30px 160px;
+}
+.main-content{
+    display: flex;
+    gap: 30px;
+}
+.main-content > img{
+    width: 580px;
+}
+.main-content > span{
+    align-self: center;
+    text-align: center;
+}
+.main-content > span > button{
+    padding: 10px;
+    background-color: orangered;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.team-highlights-container{
+    padding: 80px 0;
+}
+.team-img{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 160px;
+
+}
+
+.team-img > span > img{
+    width: 300px;
+    height: 300px;
+}
+.team-highlights-container > h1{
+    justify-self: center;
+
+}
+
+.team-video{
+    display: blfock;
+    justify-self: center;
+}
+
+.team-audio{
+    justify-self: center;
+}
+/*contact-style*/
+.team-history-container{
+    padding: 30px 160px;
+    height: 100vh;
+}
+
+.team-history-container > h1{
+    justify-self: center;
+}
+.team-history-content > div > h4{
+    justify-self: center;
+}
+
+.team-history-content{
+   padding: 30px 50px;
+}
+.team-history-content div{
+   padding: 30px 0;
+}
+
+.footer{
+    background-color: yellow;
+    color: black;
+    padding: 30px 160px;
 }
