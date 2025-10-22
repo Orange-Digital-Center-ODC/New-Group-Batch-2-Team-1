@@ -1,0 +1,25 @@
+{
+  "name": "new-group-batch-2-team-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/style.css -o ./public/output.css",
+    "watch": "npx @tailwindcss/cli -i ./src/style.css -o ./public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orange-Digital-Center-ODC/New-Group-Batch-2-Team-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Orange-Digital-Center-ODC/New-Group-Batch-2-Team-1/issues"
+  },
+  "homepage": "https://github.com/Orange-Digital-Center-ODC/New-Group-Batch-2-Team-1#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.15",
+    "tailwindcss": "^4.1.15"
+  }
+}
