@@ -4,58 +4,189 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FC Fassel - Home</title>
-    <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./public/output.css" />
+
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-
-    <header class="header">
-            <h1 class="logo">FC Fassell</h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <header
+      class="bg-black flex justify-between items-center text-white p-3 poppins sticky top-0 z-100 shadow-md"
+    >
+      <nav class="hidden md:flex">
+        <ul class="flex gap-5 tracking-wide text-base mx-4">
+          <li>
+            <a href="#" class="hover:text-green-300 transition duration-300"
+              >Media</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="hover:text-green-300 transition duration-300 ease-in"
+              >Fixture</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="hover:text-green-300 transition duration-300 ease-in"
+              >Calendar</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="w-14 h-14 rounded-full sm:justify-end"
+        src="./Wologisi_FC/images_file/Fassell_logo.png"
+        alt="team logo"
+      />
+      <div class="hidden md:flex mx-4 gap-2">
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      <!-- Mobile menu Button -->
+      <div class="md:hidden">
+        <button id="buttonToggle" class="focus:outline-none">
+          <svg
+            class="w-10 h-10 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
     </header>
-<!--<h1>WELCOME TO THE HOME OF FC FASSELL!</h1>-->
+    <!--<h1>WELCOME TO THE HOME OF FC FASSELL!</h1>-->
 
- <main class="main-container">
-        <section class="main-content">
-            <img src="./images_file/Fassell_Team.jpg" alt="sd">
-            <span>
-                <h1>FC Fassell — Pride of Monrovia</h1>
-                <p>FC Fassell is a professional football club from Monrovia, Liberia,
-                    known for its fast-paced attack, passionate fans, and commitment to
-                    youth development. Founded with a vision to raise local talent, FC
-                    Fassell competes in national competitions and has become one of
-                    Liberia’s most respected clubs.
-                !</p>
-                <button>Contact Us</button>    
-            </span>
-        </section>
+    <main class="main-container">
+      <!-- Hero section goes here -->
+      <section class="relative w-full h-[80vh] overflow-hidden bg-black ubuntu">
+        <div
+          id="carousel"
+          class="relative flex items-center justify-center h-full transition-transform duration-700 ease-in-out"
+        >
+          <!-- Slide 1 -->
+          <div
+            class="slide relative shrink-0 w-[80%] md:w-[60%] h-[70vh] mx-1 transition-all duration-700 ease-in-out opacity-100 scale-100 z-20"
+          >
+            <img
+              src="./Wologisi_FC/images_file/img1.jpeg"
+              alt="Match 1"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white"
+            >
+              <h2 class="text-xl md:text-3xl font-bold uppercase mb-2">
+                Wologisi FC defeats Nimba 1:0
+              </h2>
+              <p class="text-blue-400 text-sm mb-1">Sept 23, 2025</p>
+              <p class="text-sm md:text-base max-w-xl">
+                Advances to the final after a thrilling semi-final clash.
+              </p>
+            </div>
+          </div>
+          <!-- Slider 2 -->
+          <div
+            class="slide relative shrink-0 w-[80%] md:w-[60%] h-[70vh] mx-1 transition-all duration-700 ease-in-out opacity-100 scale-100 z-20"
+          >
+            <img
+              src="./Wologisi_FC/images_file/img3.jpg"
+              alt="Match 1"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white"
+            >
+              <h2 class="text-xl md:text-3xl font-bold uppercase mb-2">
+                Wologisi FC training session
+              </h2>
+              <p class="text-blue-400 text-sm mb-1">Sept 25, 2025</p>
+              <p class="text-sm md:text-base max-w-xl">
+                The team gears up with focus and determination for the final
+                showdown.
+              </p>
+            </div>
+          </div>
+          <!-- slider 3 -->
+          <div
+            class="slide relative shrink-0 w-[80%] md:w-[60%] h-[70vh] mx-1 transition-all duration-700 ease-in-out opacity-100 scale-100 z-20"
+          >
+            <img
+              src="./Wologisi_FC/images_file/img2.jpeg"
+              alt="Match 1"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white"
+            >
+              <h2 class="text-xl md:text-3xl font-bold uppercase mb-2">
+                Wologisi fans celebrate victory
+              </h2>
+              <p class="text-blue-400 text-sm mb-1">Sept 27, 2025</p>
+              <p class="text-sm md:text-base max-w-xl">
+                A night of celebration as supporters cheered their heroes&apos;
+                win.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Slider navigation Arrows -->
+        <button
+          id="prev"
+          class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-30"
+        >
+          &#10094;
+        </button>
+        <button
+          id="next"
+          class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-30"
+        >
+          &#10095;
+        </button>
+      </section>
+      <section class="team-highlights-container">
+        <h1 class="">Team's Highlights</h1>
+        <div class="team-img">
+          <span>
+            <img src="./images_file/Fassell_Team.jpg" alt="" />
+            <p>2024 — Finished top 4 in the Liberian National League.</p>
+          </span>
+          <span>
+            <img src="./images_file/Champiom_FC_Fassell.jpeg" alt="" />
+            <p>2023 — Won the Monrovia Cup (Friendly Tournament).</p>
+          </span>
+          <span>
+            <img src="./images_file/Fassell_Home_Jessey.jpeg" alt="" />
+            <p>Ongoing — Community coaching clinics across Montserrado.</p>
+          </span>
+        </div>
+      </section>
 
-         <section class="team-highlights-container">
-            <h1>Team's Highlights</h1>
-            <div class="team-img">
-                <span>
-                  <img src="./images_file/Fassell_Team.jpg" alt="">
-                  <p>2024 — Finished top 4 in the Liberian National League.</p>
-                </span>
-               <span>
-                  <img src="./images_file/Champiom_FC_Fassell.jpeg" alt="">
-                  <p>2023 — Won the Monrovia Cup (Friendly Tournament).</p>
-                </span>
-                 <span>
-                  <img src="./images_file/Fassell_Home_Jessey.jpeg" alt="">
-                  <p>Ongoing — Community coaching clinics across Montserrado.</p>
-                </span>
-                </div>
-        </section>
-
-          <section class="team-video">
-        <iframe 
-          width="800" 
+      <section class="team-video">
+        <iframe
+          width="800"
           height="450"
           src="https://www.youtube.com/embed/mykhNhnrcnw?si=3EJcfZM2Uo7Ua-Xx"
           title="FC Fassell - Official Team Video"
@@ -67,16 +198,16 @@
         <p>FC Fassell - Official Team Video</p>
       </section>
 
-        <audio class="team-audio" controls>
-          <source src ="./audios_file/comentary.m4a" type="audio/mpeg">
-        </audio>
-  </main>
-         <!--<strong>Official club crest • Community-driven • Youth development</strong--> 
+      <audio class="team-audio" controls>
+        <source src="./audios_file/comentary.m4a" type="audio/mpeg" />
+      </audio>
+    </main>
+    <!--<strong>Official club crest • Community-driven • Youth development</strong-->
 
     <footer class="footer">
       <p>&copy; 2024 FC Fassell. All rights reserved.</p>
     </footer>
 
-
+    <script src="./src/script.js"></script>
   </body>
 </html>
