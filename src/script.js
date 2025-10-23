@@ -37,3 +37,26 @@ setInterval(() => {
 }, 5000);
 
 updateSlides();
+
+// Script for setting match countdown
+const matchDate = new Date("November 3, 2025 18:00:00").getTime();
+
+const countdownEl = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+const now = new Date().getTime();
+const distance = matchDate - now;
+
+if (distance < 0) {
+    clearInterval(timer);
+    countdownEl.textContent = "MATCH STARTED!";
+    return;
+}
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+countdownEl.textContent =
+    `${days.toString().padStart(2, "0")}:${hours.toString().padStart(2, "0")}:${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
+}, 1000);

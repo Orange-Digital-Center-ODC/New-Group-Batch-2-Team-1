@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FC Fassel - Home</title>
+    <title>Wologisi_FC - Home</title>
     <link rel="stylesheet" href="./public/output.css" />
 
     <!-- Fontawesome link -->
@@ -44,7 +44,7 @@
       </nav>
       <img
         class="w-14 h-14 rounded-full sm:justify-end"
-        src="./Wologisi_FC/images_file/Fassell_logo.png"
+        src="./Wologisi_FC/images_file/20250927_204543.png"
         alt="team logo"
       />
       <div class="hidden md:flex mx-4 gap-2">
@@ -166,36 +166,481 @@
           &#10095;
         </button>
       </section>
-      <section class="team-highlights-container">
-        <h1 class="">Team's Highlights</h1>
-        <div class="team-img">
-          <span>
-            <img src="./images_file/Fassell_Team.jpg" alt="" />
-            <p>2024 — Finished top 4 in the Liberian National League.</p>
-          </span>
-          <span>
-            <img src="./images_file/Champiom_FC_Fassell.jpeg" alt="" />
-            <p>2023 — Won the Monrovia Cup (Friendly Tournament).</p>
-          </span>
-          <span>
-            <img src="./images_file/Fassell_Home_Jessey.jpeg" alt="" />
-            <p>Ongoing — Community coaching clinics across Montserrado.</p>
-          </span>
+
+      <!-- Next match countdown -->
+      <section
+        class="bg-gray-100 py-10 anton flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left"
+      >
+        <!-- Left Team -->
+        <img
+          class="w-24 h-24 object-contain rounded-full"
+          src="./Wologisi_FC/images_file/Fassell_logo.png"
+          alt="Fassell logo"
+        />
+
+        <!-- Center Info -->
+        <div>
+          <h1
+            class="text-blue-400 anton text-lg uppercase tracking-wide mb-2 text-center"
+          >
+            Next Match
+          </h1>
+          <div
+            class="flex flex-col items-center md:flex-row md:items-center justify-center gap-2"
+          >
+            <h2 class="text-gray-700 text-sm md:text-base">
+              Orange Cup / ATS Stadium
+            </h2>
+            <span class="hidden md:inline text-gray-400">|</span>
+            <img
+              class="w-8 h-8 object-contain"
+              src="./Wologisi_FC/images_file/cup image.jpeg"
+              alt="Cup image"
+            />
+          </div>
+
+          <!-- Countdown -->
+          <h1
+            id="countdown"
+            class="text-4xl Orbitron md:text-4xl text-blue-500 mt-4 tracking-widest"
+          >
+            00:00:00:00
+          </h1>
+
+          <div
+            class="flex justify-around gap-4 text-gray-500 text-xs uppercase mt-2"
+          >
+            <span>Days</span>
+            <span>Hours</span>
+            <span>Mins</span>
+            <span>Secs</span>
+          </div>
+        </div>
+        <!-- Right Team -->
+        <img
+          class="w-24 h-24 object-contain rounded-full"
+          src="./Wologisi_FC/images_file/20250927_204543.png"
+          alt="Wologisi logo"
+        />
+      </section>
+
+      <!-- Match Schedule Section -->
+      <section class="bg-gray-50 py-12 px-6 md:px-16 font-sans anton">
+        <div class="flex justify-around items-center mb-8">
+          <h2
+            class="text-xl md:text-3xl underline text-gray-700 uppercase pb-1 md:-ml-27"
+          >
+            Wologisi Fc - WFC Matches
+          </h2>
+          <a
+            href="#"
+            class="text-gray-400 underline hover:text-green-300 transition duration-200 ease-in-out flex items-center gap-2 text-sm md:text-base"
+          >
+            Calendar
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3.75 8.25h16.5m-15 4.5h13.5m-13.5 4.5h13.5M3.75 8.25V19.5a2.25 2.25 0 002.25 2.25h12a2.25 2.25 0 002.25-2.25V8.25"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Upcoming Matches List -->
+        <div class="flex flex-wrap justify-center gap-6 mb-8">
+          <!-- Match Card 1 -->
+          <div
+            class="flex bg-linear-to-r from-gray-900 to-gray-800 text-white rounded-lg shadow-lg overflow-hidden w-[320px]"
+          >
+            <div
+              class="bg-linear-to-b from-gray-700 to-gray-900 flex flex-col items-center justify-center px-4 py-3"
+            >
+              <h3 class="text-3xl">24</h3>
+              <span class="text-xs uppercase">Oct</span>
+            </div>
+            <div class="flex-1 px-4 py-3">
+              <div
+                class="flex justify-between items-center text-xs text-white tracking-wide mb-2"
+              >
+                <span>Wologisi FC / ATS Stadium</span>
+                <span>Orange Cup</span>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./Wologisi_FC/images_file/Fassell_logo.png"
+                    class="w-8 h-8"
+                    alt="Sharjah logo"
+                  />
+                  <span class="text-white text-sm">F.C Fassell</span>
+                </div>
+                <span class="text-xs text-white">vs</span>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./Wologisi_FC/images_file/20250927_204543.png"
+                    class="w-8 h-8"
+                    alt="WFC logo"
+                  />
+                  <span class="text-white text-sm">Wologisi FC</span>
+                </div>
+              </div>
+              <p class="text-right text-white text-xs">16:55 pm</p>
+            </div>
+          </div>
+
+          <!-- Match Card 2 -->
+          <div
+            class="flex bg-linear-to-r from-gray-900 to-gray-800 text-white rounded-lg shadow-lg overflow-hidden w-[320px]"
+          >
+            <div
+              class="bg-linear-to-b from-gray-700 to-gray-900 flex flex-col items-center justify-center px-4 py-3"
+            >
+              <h3 class="text-3xl">01</h3>
+              <span class="text-xs uppercase">Nov</span>
+            </div>
+            <div class="flex-1 px-4 py-3">
+              <div
+                class="flex justify-between tracking-wide items-center text-xs text-white mb-2"
+              >
+                <span>Heaven Eleven / Wologisi Stadium</span>
+                <span>First Division</span>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./Wologisi_FC/images_file/20250927_204543.png"
+                    class="w-8 h-8"
+                    alt="WFC logo"
+                  />
+                  <span class="text-white text-sm">WFC</span>
+                </div>
+                <span class="text-xs text-white">vs</span>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./Wologisi_FC/images_file/heaven.jpeg"
+                    class="w-8 h-8"
+                    alt="Opponent logo"
+                  />
+                  <span class="text-white text-sm">HE Fc.</span>
+                </div>
+              </div>
+              <p class="text-right text-white text-xs">14:30 p.m</p>
+            </div>
+          </div>
+
+          <!-- Match Card 3 -->
+          <div
+            class="flex bg-linear-to-r from-gray-900 to-gray-800 text-white rounded-lg shadow-lg overflow-hidden w-[320px]"
+          >
+            <div
+              class="bg-linear-to-b from-gray-700 to-gray-900 flex flex-col items-center justify-center px-4 py-3"
+            >
+              <h3 class="text-3xl">07</h3>
+              <span class="text-xs uppercase">Nov</span>
+            </div>
+            <div class="flex-1 px-4 py-3">
+              <div
+                class="flex justify-between tracking-wide items-center text-xs text-white mb-2"
+              >
+                <span>Bea Mountain / Bea Stadium</span>
+                <span>First Division</span>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./Wologisi_FC/images_file/bea.jpeg"
+                    class="w-8 h-8"
+                    alt="Opponent logo"
+                  />
+                  <span class="text-white text-sm">Bea Mount FC</span>
+                </div>
+                <span class="text-xs text-white">vs</span>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./Wologisi_FC/images_file/20250927_204543.png"
+                    class="w-8 h-8"
+                    alt="WFC logo"
+                  />
+                  <span class="text-white text-sm">Wologisi FC</span>
+                </div>
+              </div>
+              <p class="text-right text-white text-xs">16:45 pm</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Our Team -->
+        <div
+          class="text-center poppins md:text-left max-w-4xl mx-auto text-gray-600 leading-relaxed"
+        >
+          <p class="mb-2">
+            Welcome to
+            <span class="font-semibold text-gray-800">Wologisi FC</span> —
+            Liberia&apos;s rising football club.
+          </p>
+          <p class="mb-2">
+            Our club is built on unity, development, and excellence on and off
+            the pitch. We aim to nurture young talent and inspire passion across
+            our community.
+          </p>
+          <p>
+            Be part of the action! Catch our next exciting match at our home
+            ground — entry is free for all fans!
+          </p>
         </div>
       </section>
 
-      <section class="team-video">
-        <iframe
-          width="800"
-          height="450"
-          src="https://www.youtube.com/embed/mykhNhnrcnw?si=3EJcfZM2Uo7Ua-Xx"
-          title="FC Fassell - Official Team Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <p>FC Fassell - Official Team Video</p>
+      <!-- Recent games and past games section -->
+      <section class="bg-gray-50 py-12 px-6 md:px-16 font-sans anton">
+        <!-- Section Header -->
+        <div class="flex justify-between items-center mb-10">
+          <h2
+            class="text-xl md:text-3xl underline text-gray-700 uppercase tracking-wider"
+          >
+            Games
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="space-y-6">
+            <div
+              class="flex bg-gray-900 text-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div
+                class="bg-gray-800 flex flex-col items-center justify-center px-4 py-3 w-20"
+              >
+                <h3 class="text-2xl">18</h3>
+                <span class="text-xs uppercase">Oct</span>
+              </div>
+              <div class="flex-1 px-5 py-4">
+                <div
+                  class="flex justify-between items-center text-xs mb-2 text-white"
+                >
+                  <span>Fc. Fassell / ATS Stadium</span>
+                  <span>First Division League</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./Wologisi_FC/images_file/Fassell_logo.png"
+                      alt="United FC"
+                      class="w-8 h-8"
+                    />
+                    <span>Fc Fassell</span>
+                  </div>
+                  <span class=" text-lg">1 - 1</span>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./Wologisi_FC/images_file/20250927_204543.png"
+                      alt="Al Jazira Al Hamra"
+                      class="w-8 h-8"
+                    />
+                    <span>Wologisi Fc</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex bg-gray-900 text-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div
+                class="bg-gray-800 flex flex-col items-center justify-center px-4 py-3 w-20"
+              >
+                <h3 class="text-2xl">07</h3>
+                <span class="text-xs uppercase">Oct</span>
+              </div>
+              <div class="flex-1 px-5 py-4">
+                <div
+                  class="flex justify-between items-center text-xs mb-2 text-white"
+                >
+                  <span>Bea Mountain Fc / Bea Stadium</span>
+                  <span>Friendly Game</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./Wologisi_FC/images_file/bea.jpeg"
+                      alt="Shabab Al Ahli"
+                      class="w-8 h-8"
+                    />
+                    <span>Bea Mountain</span>
+                  </div>
+                  <span class=" text-lg">0 - 0</span>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./Wologisi_FC/images_file/20250927_204543.png"
+                      alt="United FC"
+                      class="w-8 h-8"
+                    />
+                    <span>Wologisi Fc</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex bg-gray-900 text-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div
+                class="bg-gray-800 flex flex-col items-center justify-center px-4 py-3 w-20"
+              >
+                <h3 class="text-2xl">07</h3>
+                <span class="text-xs uppercase">Oct</span>
+              </div>
+              <div class="flex-1 px-5 py-4">
+                <div
+                  class="flex justify-between items-center text-xs mb-2 text-white"
+                >
+                  <span>Bea Mountain Fc / Bea Stadium</span>
+                  <span>Friendly Game</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./Wologisi_FC/images_file/bea.jpeg"
+                      alt="Shabab Al Ahli"
+                      class="w-8 h-8"
+                    />
+                    <span>Bea Mountain</span>
+                  </div>
+                  <span class=" text-lg">0 - 0</span>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./Wologisi_FC/images_file/20250927_204543.png"
+                      alt="United FC"
+                      class="w-8 h-8"
+                    />
+                    <span>Wologisi Fc</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex bg-gray-900 text-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <div
+                class="bg-gray-800 flex flex-col items-center justify-center px-4 py-3 w-20"
+              >
+                <h3 class="text-2xl">07</h3>
+                <span class="text-xs uppercase">Oct</span>
+              </div>
+              <div class="flex-1 px-5 py-4">
+                <div
+                  class="flex justify-between items-center text-xs mb-2 text-white"
+                >
+                  <span>Bea Mountain Fc / Bea Stadium</span>
+                  <span>Friendly Game</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./Wologisi_FC/images_file/bea.jpeg"
+                      alt="Shabab Al Ahli"
+                      class="w-8 h-8"
+                    />
+                    <span>Bea Mountain</span>
+                  </div>
+                  <span class=" text-lg">0 - 0</span>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./Wologisi_FC/images_file/20250927_204543.png"
+                      alt="United FC"
+                      class="w-8 h-8"
+                    />
+                    <span>Wologisi Fc</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!--League Table -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div
+              class="bg-gray-800 text-white text-center py-3 tracking-widest text-3xl uppercase"
+            >
+              League Table
+            </div>
+            <table class="w-full text-left text-sm text-gray-700">
+              <thead class="bg-gray-100">
+                <tr>
+                  <th class="py-2 px-4">#</th>
+                  <th class="py-2 px-4">Team</th>
+                  <th class="py-2 px-4">P</th>
+                  <th class="py-2 px-4">W</th>
+                  <th class="py-2 px-4">PTS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t">
+                  <td class="py-2 px-4">1</td>
+                  <td class="py-2 px-4 flex items-center gap-2">
+                    <img
+                      src="./logos/emirates.png"
+                      class="w-5 h-5"
+                      alt="Emirates"
+                    />
+                    Emirates
+                  </td>
+                  <td class="py-2 px-4">4</td>
+                  <td class="py-2 px-4">4</td>
+                  <td class="py-2 px-4 font-bold">12</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-2 px-4">2</td>
+                  <td class="py-2 px-4 flex items-center gap-2">
+                    <img
+                      src="./logos/dibba.png"
+                      class="w-5 h-5"
+                      alt="Dibba Al-Hisn"
+                    />
+                    Dibba Al-Hisn
+                  </td>
+                  <td class="py-2 px-4">3</td>
+                  <td class="py-2 px-4">3</td>
+                  <td class="py-2 px-4 font-bold">9</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-2 px-4">3</td>
+                  <td class="py-2 px-4 flex items-center gap-2">
+                    <img
+                      src="./logos/hamriya.png"
+                      class="w-5 h-5"
+                      alt="Al Hamriya"
+                    />
+                    Al Hamriya
+                  </td>
+                  <td class="py-2 px-4">3</td>
+                  <td class="py-2 px-4">2</td>
+                  <td class="py-2 px-4 font-bold">7</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-2 px-4">4</td>
+                  <td class="py-2 px-4 flex items-center gap-2">
+                    <img
+                      src="./logos/unitedfc.png"
+                      class="w-5 h-5"
+                      alt="United FC"
+                    />
+                    United FC
+                  </td>
+                  <td class="py-2 px-4">3</td>
+                  <td class="py-2 px-4">2</td>
+                  <td class="py-2 px-4 font-bold">7</td>
+                </tr>
+                <!-- Continue other teams as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
 
       <audio class="team-audio" controls>
