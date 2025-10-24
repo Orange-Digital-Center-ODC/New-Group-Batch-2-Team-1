@@ -2,6 +2,17 @@
 
 @import "tailwindcss";
 
+ module.exports = {
+    theme: {
+      extend: {
+        backgroundImage: theme => ({
++         'hero-pattern': "url('../Wologisi_FC/wologisi/FB_IMG_1758833678300.jpg')",
++         'footer-texture': "url('/img/footer-texture.png')",
+        })
+      }
+    }
+  }
+
 .poppins {
   font-family: "Poppins", sans-serif;
 }
