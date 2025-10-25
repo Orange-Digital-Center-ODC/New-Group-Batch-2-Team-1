@@ -57,7 +57,7 @@
           </li>
           <li>
             <a
-              href="contact.html"
+              href="calandar.html"
               class="hover:text-green-300 transition duration-300"
               >Calendar</a
             >
@@ -152,7 +152,7 @@
           </li>
           <li>
             <a
-              href="contact.html"
+              href="calandar.html"
               class="menu-link hover:text-green-300 transition duration-300"
               >Calendar</a
             >
@@ -193,190 +193,324 @@
           <h1
             class="text-white font-bold text-7xl sm:text-8xl md:text-[15rem] bg-black opacity-15 w-full tracking-widest lg:text-[12rem] md:-mb-20 leading-tight"
           >
-            Media
+            Schedule Calandar
           </h1>
           <h2
             class="text-white font-semibold text-8xl sm:text-3xl md:text-8xl lg:text-[6rem] z-10"
           >
-            Media
+            Calendar
           </h2>
         </div>
       </section>
-      <!-- ====== LATEST NEWS SECTION ====== -->
-      <section id="news" class="w-full py-16">
+
+      <!-- ====== Calendar Section ====== -->
+      <section
+        id="calendar"
+        class="w-full py-16 bg-gray-50"
+        x-data="{ openMonth: 'October' }"
+      >
         <div class="max-w-6xl mx-auto px-4">
-          <!-- Section Title -->
           <div class="text-left mb-10">
-            <h2 class="text-3xl anton md:text-4xl text-green-900 underline">
-              News
+            <h2 class="text-3xl md:text-4xl text-green-900 underline anton">
+              Calendar
             </h2>
           </div>
 
-          <!-- News Grid -->
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <article
-              class="bg-white shadow-md  rounded-xl hover:shadow-lg overflow-hidden"
-            >
-              <img
-                src="../Wologisi_FC/images_file/img1.jpeg"
-                alt="Match photo"
-                class="w-full h-56 object-cover"
-              />
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold text-[#015301] mb-1 anton tracking-wider"
+          <!-- Month Accordion -->
+          <div class="divide-y divide-green-300">
+            <!-- Monthn of June -->
+            <div>
+              <button
+                @click="openMonth === 'June' ? openMonth = null : openMonth = 'June'"
+                class="w-full flex justify-between items-center py-4 text-2xl anton text-green-800 hover:text-green-800 transition"
+              >
+                June
+                <span x-text="openMonth === 'June' ? '–' : '+'"></span>
+              </button>
+              <div
+                x-show="openMonth === 'June'"
+                x-transition
+                class="py-6 space-y-8"
+              >
+                <div
+                  class="bg-white shadow-md rounded-lg py-10 px-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition"
                 >
-                  Our first game in the CAF
-                </h3>
-                <p class="text-sm text-gray-500 mb-3">October 20, 2025</p>
-                <p class="text-gray-700 mb-4 poppins">
-                  A thrilling experiene for the Lads the thier first CAF
-                  appearence.
-                </p>
-                <a
-                  href="#"
-                  class="text-[#015301] font-semibold hover:text-green-400 transition"
-                  >Read More →</a
-                >
-              </div>
-            </article>
+                  <div
+                    class="flex items-center justify-center gap-10 mb-6 flex-wrap"
+                  >
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Team 1"
+                        class="w-20 h-20 object-contain mb-2"
+                      />
+                      <p class="text-lg  anton text-green-800">
+                        Wologisi FC
+                      </p>
+                    </div>
 
-            <!-- Card 2 -->
-            <article
-              class="bg-white rounded-xl shadow hover:shadow-lg transition-all overflow-hidden"
-            >
-              <img
-                src="../Wologisi_FC/images_file/img3.jpg"
-                alt="Training photo"
-                class="w-full h-56 object-cover"
-              />
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold text-[#015301] mb-1 anton tracking-wider"
-                >
-                  Training Camp Highlights: Preparing for Next Round
-                </h3>
-                <p class="text-sm text-gray-500 mb-3">October 17, 2025</p>
-                <p class="text-gray-700 mb-4 poppins">
-                  our Coaching leads an intense week of tactical training ahead
-                  of next week&apos;s match.
-                </p>
-                <a
-                  href="#"
-                  class="text-[#015301] font-semibold hover:text-green-400 transition"
-                  >Read More →</a
-                >
-              </div>
-            </article>
+                    <div class="text-3xl  text-green-700 anton">VS</div>
 
-            <!-- Card 3 -->
-            <article
-              class="bg-white rounded-xl shadow hover:shadow-lg transition-all overflow-hidden"
-            >
-              <img
-                src="../Wologisi_FC/images_file/img2.jpeg"
-                alt="Fans celebration"
-                class="w-full h-56 object-cover"
-              />
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold text-[#015301] mb-1 anton tracking-wider"
-                >
-                  Baba2swift gets recgonization from our president
-                </h3>
-                <p class="text-sm text-gray-500 mb-3">October 15, 2025</p>
-                <p class="text-gray-700 mb-4 poppins">
-                  Our head of mobolization gets his recgonization.
-                </p>
-                <a
-                  href="#"
-                  class="text-[#015301] font-semibold hover:text-green-400 transition"
-                  >Read More →</a
-                >
-              </div>
-            </article>
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/images_file/Fassell_logo.png"
+                        alt="Team 2"
+                        class="w-20 h-20 object-contain mb-2"
+                      />
+                      <p class="text-lg  anton text-green-800">
+                        Fc Fassell
+                      </p>
+                    </div>
+                  </div>
 
-            <!-- Card 4 -->
-            <article
-              class="bg-white rounded-xl shadow hover:shadow-lg transition-all overflow-hidden"
-            >
-              <img
-                src="../Wologisi_FC/wologisi/FB_IMG_1758833761010.jpg"
-                alt="Fans celebration"
-                class="w-full h-56 object-cover"
-              />
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold text-[#015301] mb-1 anton tracking-wider"
-                >
-                  Baba2swift gets recgonization from our president
-                </h3>
-                <p class="text-sm text-gray-500 mb-3">October 15, 2025</p>
-                <p class="text-gray-700 mb-4 poppins">
-                  Our head of mobolization gets his recgonization.
-                </p>
-                <a
-                  href="#"
-                  class="text-[#015301] font-semibold hover:text-green-400 transition"
-                  >Read More →</a
-                >
-              </div>
-            </article>
+                  <div class="text-4xl font-bold anton text-green-900 mb-3">
+                    2 : 2
+                  </div>
 
-            <!-- Card 5 -->
-            <article
-              class="bg-white rounded-xl shadow hover:shadow-lg transition-all overflow-hidden"
-            >
-              <img
-                src="../Wologisi_FC/wologisi/FB_IMG_1758833899053.jpg"
-                alt="Fans celebration"
-                class="w-full h-56 object-cover"
-              />
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold text-[#015301] mb-1 anton tracking-wider"
-                >
-                  Baba2swift gets recgonization from our president
-                </h3>
-                <p class="text-sm text-gray-500 mb-3">October 15, 2025</p>
-                <p class="text-gray-700 mb-4 poppins">
-                  Our head of mobolization gets his recgonization.
-                </p>
-                <a
-                  href="#"
-                  class="text-[#015301] font-semibold hover:text-green-400 transition"
-                  >Read More →</a
-                >
+                  <div class="text-sm text-green-600 poppins">
+                    <p class="">Friendly Match - 18:30</p>
+                    <p>10 July 2025</p>
+                    <p class="italic">Fassell Stadium</p>
+                  </div>
+                </div>
               </div>
-            </article>
+            </div>
+            <!-- Monthn of July -->
+            <div>
+              <button
+                @click="openMonth === 'July' ? openMonth = null : openMonth = 'July'"
+                class="w-full flex justify-between items-center py-4 text-2xl anton text-green-800 hover:text-green-800 transition"
+              >
+                July
+                <span x-text="openMonth === 'July' ? '–' : '+'"></span>
+              </button>
+              <div
+                x-show="openMonth === 'July'"
+                x-transition
+                class="py-6 space-y-8"
+              >
+                <div
+                  class="bg-white shadow-md rounded-lg py-10 px-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition"
+                >
+                  <div
+                    class="flex items-center justify-center gap-10 mb-6 flex-wrap"
+                  >
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Team 1"
+                        class="w-20 h-20 object-contain mb-2"
+                      />
+                      <p class="text-lg  anton text-green-800">
+                        Wologisi FC
+                      </p>
+                    </div>
 
-            <!-- Card 6 -->
-            <article
-              class="bg-white rounded-xl shadow hover:shadow-lg transition-all overflow-hidden"
-            >
-              <img
-                src="../Wologisi_FC/wologisi/FB_IMG_1758833684236.jpg"
-                alt="Fans celebration"
-                class="w-full h-56 object-cover"
-              />
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold text-[#015301] mb-1 anton tracking-wider"
-                >
-                  Baba2swift gets recgonization from our president
-                </h3>
-                <p class="text-sm text-gray-500 mb-3">October 15, 2025</p>
-                <p class="text-gray-700 mb-4 poppins">
-                  Our head of mobolization gets his recgonization.
-                </p>
-                <a
-                  href="#"
-                  class="text-[#015301] font-semibold hover:text-green-400 transition"
-                  >Read More →</a
-                >
+                    <div class="text-3xl  text-green-700 anton">VS</div>
+
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/images_file/Fassell_logo.png"
+                        alt="Team 2"
+                        class="w-20 h-20 object-contain mb-2"
+                      />
+                      <p class="text-lg  anton text-green-800">
+                        Fc Fassell
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="text-4xl font-bold anton text-green-900 mb-3">
+                    2 : 2
+                  </div>
+
+                  <div class="text-sm text-green-600 poppins">
+                    <p class="">Friendly Match - 18:30</p>
+                    <p>10 July 2025</p>
+                    <p class="italic">Fassell Stadium</p>
+                  </div>
+                </div>
               </div>
-            </article>
+            </div>
+
+            <!-- Month of August -->
+            <div>
+              <button
+                @click="openMonth === 'August' ? openMonth = null : openMonth = 'August'"
+                class="w-full flex justify-between items-center py-4 text-2xl  anton text-green-800 hover:text-green-800 transition"
+              >
+                August
+                <span x-text="openMonth === 'August' ? '–' : '+'"></span>
+              </button>
+              <div
+                x-show="openMonth === 'August'"
+                x-transition
+                class="py-6 space-y-8"
+              >
+                <div
+                  class="bg-white shadow-md rounded-lg py-10 px-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition"
+                >
+                  <div
+                    class="flex items-center justify-center gap-10 mb-6 flex-wrap"
+                  >
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Team 1"
+                        class="w-20 h-20 object-contain mb-2"
+                      />
+                      <p class="text-lg  anton text-green-800">
+                        Wologisi FC
+                      </p>
+                    </div>
+
+                    <div class="text-3xl  text-green-700 anton">VS</div>
+
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/team Logo/down.png"
+                        alt="Downtown"  
+                        class="w-20 h-20 object-contain mb-2"
+                      />
+                      <p class="text-lg  anton text-green-800">
+                        Downtown Fc 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="text-4xl  anton text-green-900 mb-3">
+                    2 : 2
+                  </div>
+
+                  <div class="text-sm text-green-600 poppins">
+                    <p class="font-semibold">Friendly Match - 18:30</p>
+                    <p>24 Augus 2025</p>
+                    <p class="italic">Wologisi Stadium</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Month of September -->
+            <div>
+              <button
+                @click="openMonth === 'September' ? openMonth = null : openMonth = 'September'"
+                class="w-full flex justify-between items-center py-4 text-2xl  anton text-green-800 hover:text-green-800 transition"
+              >
+                September
+                <span x-text="openMonth === 'September' ? '–' : '+'"></span>
+              </button>
+              <div
+                x-show="openMonth === 'September'"
+                x-transition
+                class="py-6 space-y-8"
+              >
+                <div
+                  class="bg-white shadow-md rounded-lg py-10 px-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition"
+                >
+                  <div
+                    class="flex items-center justify-center gap-10 mb-6 flex-wrap"
+                  >
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Team 1"
+                        class="w-20 h-20 object-contain mb-2"
+                      />
+                      <p class="text-lg  anton text-green-800">
+                        Wologisi FC
+                      </p>
+                    </div>
+
+                    <div class="text-3xl  text-green-700 anton">VS</div>
+
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/team Logo/down.png"
+                        alt="Downtown"  
+                        class="w-20 h-20 object-contain mb-2"
+                      />
+                      <p class="text-lg  anton text-green-800">
+                        Downtown Fc 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="text-4xl  anton text-green-900 mb-3">
+                    2 : 2
+                  </div>
+
+                  <div class="text-sm text-green-600 poppins">
+                    <p class="font-semibold">Friendly Match - 18:30</p>
+                    <p>24 Augus 2025</p>
+                    <p class="italic">Wologisi Stadium</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Months of October-->
+            <div>
+              <button
+                @click="openMonth === 'October' ? openMonth = null : openMonth = 'October'"
+                class="w-full flex justify-between items-center py-4 text-2xl  anton text-green-800 hover:text-green-800 transition"
+              >
+                October
+                <span x-text="openMonth === 'October' ? '–' : '+'"></span>
+              </button>
+              <div
+                x-show="openMonth === 'October'"
+                x-transition
+                class="py-6 space-y-8"
+              >
+                <div
+                  class="bg-white shadow-md rounded-lg py-10 px-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition"
+                >
+                  <div
+                    class="flex items-center justify-center gap-10 mb-6 flex-wrap"
+                  >
+                    <!-- Home Team -->
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Dibba Al-Hisn"
+                        class="w-16 h-16 object-contain mb-2"
+                      />
+                      <p class="text-xl  anton text-green-800">
+                        Wologisi Fc
+                      </p>
+                    </div>
+
+                    <!-- VS -->
+                    <div class="text-3xl text-green-700 anton">VS</div>
+
+                    <!-- Away team -->
+                    <div class="flex flex-col items-center">
+                      <img
+                        src="../Wologisi_FC/team Logo/black.jpeg"
+                        alt="Blackman Warriors"
+                        class="w-16 h-16 object-contain mb-2"
+                      />
+                      <p class="text-xl anton text-green-800">
+                        Blackman Warriors
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Score -->
+                  <div class="text-4xl anton text-green-900 mb-3">
+                    -
+                  </div>
+
+                  <!-- Match Info -->
+                  <div class="text-sm text-green-600 poppins">
+                    <p class="font-semibold">First Division semi-final - 17:15</p>
+                    <p>30 October 2025</p>
+                    <p class="italic">ATS Stadium</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

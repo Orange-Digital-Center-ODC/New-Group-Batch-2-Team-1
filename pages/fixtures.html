@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wologisi_FC - Home</title>
+    <link rel="stylesheet" href="../public/output.css" />
+
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Libray for opening video preview -->
+    <script
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+
+    <style>
+      #mobileMenu {
+        width: 50vw !important;
+        max-width: 50vw !important;
+      }
+
+      @media (min-width: 640px) {
+        #mobileMenu {
+          width: 40vw !important;
+          max-width: 40vw !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="bg-[#002200] flex justify-between items-center text-white p-3 poppins sticky top-0 z-100 shadow-md"
+    >
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex">
+        <ul class="flex gap-5 tracking-wide text-base mx-4">
+          <li>
+            <a
+              href="../pages/media.html"
+              class="hover:text-green-300 transition duration-300"
+              >Media</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/fixtures.html"
+              class="hover:text-green-300 transition duration-300"
+              >Fixtures & Results</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/calandar.html"
+              class="hover:text-green-300 transition duration-300"
+              >Calendar</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Logo -->
+      <a href="../index.html"
+        ><img
+          class="w-16 h-16 rounded-full sm:justify-end"
+          src="../Wologisi_FC/images_file/20250927_204543.png"
+          alt="team logo"
+        />
+      </a>
+
+      <!-- Desktop Social Icons -->
+      <div class="hidden md:flex mx-4 gap-2">
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center z-200">
+        <!-- Open Icon -->
+        <button
+          id="openMenu"
+          class="focus:outline-none transition-all duration-300"
+        >
+          <svg
+            class="w-9 h-9 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Close Icon -->
+        <button
+          id="closeMenu"
+          class="hidden focus:outline-none transition-all duration-300"
+        >
+          <svg
+            class="w-9 h-9 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Panel -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 left-0 w-1/2 h-full bg-[#002200] text-white transform -translate-x-full transition-transform duration-500 ease-in-out flex flex-col items-start justify-start gap-8 p-8 z-150"
+      >
+        <ul class="flex flex-col gap-6 text-lg w-full">
+          <li>
+            <a
+              href="../pages/media.html"
+              class="menu-link hover:text-green-300 transition duration-300"
+              >Media</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/fixtures.html"
+              class="menu-link hover:text-green-300 transition duration-300"
+              >Fixtures & Results</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/calandar.html"
+              class="menu-link hover:text-green-300 transition duration-300"
+              >Calendar</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex gap-4 mt-8">
+          <a href="#" class="hover:text-green-300 transition duration-300"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="hover:text-green-300 transition duration-300"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="hover:text-green-300 transition duration-300"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <!-- Hero section goes here -->
+      <section class="relative w-full h-screen anton">
+        <!-- Background image -->
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="
+            background-image: url('../Wologisi_FC/wologisi/FB_IMG_1758833678300.jpg');
+          "
+          aria-hidden="true"
+        ></div>
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/80"></div>
+
+        <!-- Content -->
+        <div
+          class="relative flex flex-col justify-center h-full px-4 sm:px-10 md:px-20"
+        >
+          <h1
+            class="text-white font-bold text-7xl sm:text-8xl md:text-[15rem] bg-black opacity-15 w-full tracking-widest lg:text-[12rem] md:-mb-20 leading-tight"
+          >
+            Seasons
+          </h1>
+          <h2
+            class="text-white font-semibold text-5xl sm:text-3xl md:text-10xl lg:text-[6rem] z-10"
+          >
+            Season 2025 - 2026
+          </h2>
+        </div>
+      </section>
+
+      <section class="bg-gray-50 py-12 sm:py-16">
+        <div
+          class="max-w-5xl mx-auto bg-white rounded-md shadow-sm p-5 border-t-4 border-green-500"
+        >
+          <div class="px-4 sm:px-8 py-6 text-center">
+            <h2
+              class="text-2xl sm:text-3xl font-bold text-green-800 mb-6 uppercase anton tracking-wide"
+            >
+              Season 2025-2026
+            </h2>
+
+            <div id="fixtures" class="relative space-y-8">
+              <div class="fixture-page">
+                <div class="border-t border-gray-200 pt-8 pb-10 ubuntu">
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center text-center"
+                  >
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/Fassell_logo.png"
+                        alt="Fassell logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Fc Fassell
+                      </h3>
+                    </div>
+                    <div>
+                      <h4
+                        class="font-bold text-green-800 text-lg sm:text-xl uppercase"
+                      >
+                        Bettomax Champion Cup 2025/2026
+                      </h4>
+                      <p class="text-sm text-green-500 mb-2">
+                        24/10/2025 – 4:55 PM
+                      </p>
+                      <p class="text-2xl sm:text-3xl font-bold text-green-700">
+                        0:0
+                      </p>
+                      <p class="text-sm mt-1 text-green-500 font-semibold">
+                        Final Score
+                      </p>
+                      <p class="text-sm text-green-400">
+                        Fc Fassell / Fassell Stadium
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Wologisi FC logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Wologisi FC
+                      </h3>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/Fassell_logo.png"
+                        alt="Fassell logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Fc Fassell
+                      </h3>
+                    </div>
+                    <div>
+                      <h4
+                        class="font-bold text-green-800 text-lg sm:text-xl uppercase"
+                      >
+                        Bettomax Champion Cup 2025/2026
+                      </h4>
+                      <p class="text-sm text-green-500 mb-2">
+                        24/10/2025 – 4:55 PM
+                      </p>
+                      <p class="text-2xl sm:text-3xl font-bold text-green-700">
+                        0:0
+                      </p>
+                      <p class="text-sm mt-1 text-green-500 font-semibold">
+                        Final Score
+                      </p>
+                      <p class="text-sm text-green-400">
+                        Fc Fassell / Fassell Stadium
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Wologisi FC logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Wologisi FC
+                      </h3>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/Fassell_logo.png"
+                        alt="Fassell logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Fc Fassell
+                      </h3>
+                    </div>
+                    <div>
+                      <h4
+                        class="font-bold text-green-800 text-lg sm:text-xl uppercase"
+                      >
+                        Bettomax Champion Cup 2025/2026
+                      </h4>
+                      <p class="text-sm text-green-500 mb-2">
+                        24/10/2025 – 4:55 PM
+                      </p>
+                      <p class="text-2xl sm:text-3xl font-bold text-green-700">
+                        0:0
+                      </p>
+                      <p class="text-sm mt-1 text-green-500 font-semibold">
+                        Final Score
+                      </p>
+                      <p class="text-sm text-green-400">
+                        Fc Fassell / Fassell Stadium
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Wologisi FC logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Wologisi FC
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 2 -->
+              <div class="fixture-page hidden">
+                <div class="border-t border-gray-200 pt-8 pb-10 ubuntu">
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center text-center"
+                  >
+                    <!-- Fixture 2 -->
+                    <div>
+                      <img
+                        src="../Wologisi_FC/team Logo/liscr.jpeg"
+                        alt="Liscr FC logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Liscr FC
+                      </h3>
+                    </div>
+                    <div>
+                      <h4
+                        class="font-bold text-green-800 text-lg sm:text-xl uppercase"
+                      >
+                        Bettomax Champion Cup 2025/2026
+                      </h4>
+                      <p class="text-sm text-green-500 mb-2">
+                        24/10/2025 – 4:55 PM
+                      </p>
+                      <p class="text-2xl sm:text-3xl font-bold text-green-700">
+                        2:1
+                      </p>
+                      <p class="text-sm mt-1 text-green-500 font-semibold">
+                        Final Score
+                      </p>
+                      <p class="text-sm text-green-400">
+                        Liscr FC / Liscr Stadium
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Wologisi FC logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Wologisi FC
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 3 -->
+              <div class="fixture-page hidden">
+                <div class="border-t border-gray-200 pt-8 pb-10 ubuntu">
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center text-center"
+                  >
+                    <!-- Fixture 3 -->
+                    <div>
+                      <img
+                        src="../Wologisi_FC/team Logo/war.jpeg"
+                        alt="Blackman Warrior logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Watanga Fc
+                      </h3>
+                    </div>
+                    <div>
+                      <h4
+                        class="font-bold text-green-800 text-lg sm:text-xl uppercase"
+                      >
+                        First Division 2025/2026
+                      </h4>
+                      <p class="text-sm text-green-500 mb-2">
+                        30/10/2025 – 4:55 PM
+                      </p>
+                      <p class="text-2xl sm:text-3xl font-bold text-green-700">
+                        -
+                      </p>
+                      <p class="text-sm mt-1 text-green-500 font-semibold">
+                        Final Score
+                      </p>
+                      <p class="text-sm text-green-400">
+                        Wologisi FC / ATS Stadium
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Wologisi FC logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Wologisi FC
+                      </h3>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/team Logo/war.jpeg"
+                        alt="Blackman Warrior logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Watanga FC
+                      </h3>
+                    </div>
+                    <div>
+                      <h4
+                        class="font-bold text-green-800 text-lg sm:text-xl uppercase"
+                      >
+                        First Division 2025/2026
+                      </h4>
+                      <p class="text-sm text-green-500 mb-2">
+                        30/10/2025 – 4:55 PM
+                      </p>
+                      <p class="text-2xl sm:text-3xl font-bold text-green-700">
+                        -
+                      </p>
+                      <p class="text-sm mt-1 text-green-500 font-semibold">
+                        Final Score
+                      </p>
+                      <p class="text-sm text-green-400">
+                        Wologisi FC / ATS Stadium
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        src="../Wologisi_FC/images_file/20250927_204543.png"
+                        alt="Wologisi FC logo"
+                        class="w-24 h-24 mx-auto mb-3"
+                      />
+                      <h3
+                        class="font-bold text-xl sm:text-2xl text-green-800 uppercase"
+                      >
+                        Wologisi FC
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PAGINATION -->
+            <div
+              class="flex flex-wrap justify-center items-center gap-2 mt-6 border-t border-gray-200 pt-6"
+            >
+              <button
+                id="prevBtn"
+                class="px-4 py-2 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 transition"
+              >
+                ← Prev
+              </button>
+              <button
+                data-page="1"
+                class="page-btn px-4 py-2 font-semibold rounded-full bg-green-500 text-white"
+              >
+                1
+              </button>
+              <button
+                data-page="2"
+                class="page-btn px-4 py-2 font-semibold rounded-full bg-green-200 hover:bg-green-500 hover:text-white"
+              >
+                2
+              </button>
+              <button
+                data-page="3"
+                class="page-btn px-4 py-2 font-semibold rounded-full bg-green-200 hover:bg-green-500 hover:text-white"
+              >
+                3
+              </button>
+              <button
+                id="nextBtn"
+                class="px-4 py-2 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 transition"
+              >
+                Next →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#001800e0] text-gray-300 font-sans anton">
+      <!-- Partners Section -->
+      <div class="text-gray-800 py-16 px-6 md:px-16">
+        <h2 class="text-2xl md:text-3xl text-white text-center uppercase mb-4">
+          Our Partners
+        </h2>
+        <p class="mb-8 poppins text-center text-white">
+          Wologisi FC is proud to be supported by our corporate partners who
+          share our commitment to excellence. Our partnerships strengthen the
+          bond between football and community, creating a platform for shared
+          success. We extend our gratitude to all our sponsors for their
+          valuable contributions to the Dubai United FC family.
+        </p>
+
+        <!-- Partner Logos -->
+        <div class="relative w-full overflow-hidden">
+          <div
+            class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mt-10 animate-marquee whitespace-nowrap"
+          >
+            <div class="flex items-center gap-16 marquee-group">
+              <img
+                src="../Wologisi_FC/partners/1xbet.png"
+                alt="Partner 1"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/betto.png"
+                alt="Partner 2"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="../Wologisi_FC/partners/img.jpg"
+                alt="Partner 3"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="../Wologisi_FC/partners/starbet.webp"
+                alt="Partner 4"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="../Wologisi_FC/partners/images.png"
+                alt="Partner 4"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div class="flex items-center gap-16 marquee-group">
+              <img
+                src="../Wologisi_FC/partners/1xbet.png"
+                alt="Partner 1"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="../Wologisi_FC/partners/betto.png"
+                alt="Partner 2"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="../Wologisi_FC/partners/img.jpg"
+                alt="Partner 3"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="../Wologisi_FC/partners/starbet.webp"
+                alt="Partner 4"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="../Wologisi_FC/partners/images.png"
+                alt="Partner 4"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Navigation -->
+      <div
+        class="py-16 px-6 md:px-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 border-t border-gray-700"
+      >
+        <div>
+          <h3 class="text-2xl text-white mb-4 uppercase">WFC</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-white text-lg text-white"
+                >Wologisi Fc</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Media -->
+        <div>
+          <h3 class="text-2xl text-white mb-4 uppercase">Media</h3>
+          <ul class="space-y-2 poppins">
+            <li><a href="#" class="hover:text-green-400">Video</a></li>
+            <li><a href="#" class="hover:text-green-400">Calendar</a></li>
+            <li>
+              <a href="#" class="hover:text-green-400">League Table</a>
+            </li>
+            <li><a href="#" class="hover:text-green-400">Schedule</a></li>
+            <li><a href="#" class="hover:text-green-400">Results</a></li>
+          </ul>
+        </div>
+
+        <!-- Club -->
+        <div>
+          <h3 class="text-white mb-4 uppercase text-2xl">Club</h3>
+          <ul class="space-y-2 poppins">
+            <li><a href="#" class="hover:text-green-400">Contact Us</a></li>
+            <li><a href="#" class="hover:text-green-400">Team</a></li>
+            <li><a href="#" class="hover:text-green-400">First Team</a></li>
+            <li><a href="#" class="hover:text-green-400">Second Team</a></li>
+          </ul>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <h3 class="text-2xl text-white mb-4 uppercase">Info</h3>
+          <ul class="space-y-2 poppins">
+            <li>
+              <a
+                href="#"
+                class="hover:text-green-300 duration-200 transition-all ease-in-out"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-green-300 duration-200 transition-all ease-in-out"
+                >Legal Terms</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-green-300 duration-200 transition-all ease-in-out"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-green-300 duration-200 transition-all ease-in-out"
+                >Cookies</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-green-300 duration-200 transition-all ease-in-out"
+                >Accessibility</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-green-300 duration-200 transition-all ease-in-out"
+                >Support / FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="border-t border-gray-700 text-center py-6 px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-sm text-white">
+          &copy; 2025 Wologisi FC. All Rights Reserved.
+        </p>
+        <div class="flex gap-4">
+          <a
+            href="#"
+            class="text-white hover:text-green-300 duration-200 ease-in-out transition-all"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="#"
+            class="text-white hover:text-green-300 duration-200 ease-in-out transition-all"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="#"
+            class="text-white hover:text-green-300 duration-200 ease-in-out transition-all"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="fixture.js"></script>
+  </body>
+</html>
