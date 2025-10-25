@@ -3,25 +3,382 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Wologisi_FC - Home</title>
+    <link rel="stylesheet" href="../public/output.css" />
+
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Libray for opening video preview -->
+    <script
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
   </head>
   <body>
- 
-<div class="container">
-        <h1>Contact Us</h1>
-        <form action="#" method="post" class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+    <header
+      class="bg-[#001200] flex justify-between items-center text-white p-3 poppins sticky top-0 z-100 shadow-md"
+    >
+      <nav class="hidden md:flex">
+        <ul class="flex gap-5 tracking-wide text-base mx-4">
+          <li>
+            <a href="./pages/media.html" class="hover:text-green-300 transition duration-300"
+              >Media</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pages/fixture"
+              class="hover:text-green-300 transition duration-300 ease-in"
+              >Fixture</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pages/calender.html"
+              class="hover:text-green-300 transition duration-300 ease-in"
+              >Calendar</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="w-16 h-16 rounded-full sm:justify-end"
+        src="./Wologisi_FC/images_file/20250927_204543.png"
+        alt="team logo"
+      />
+      <div class="hidden md:flex mx-4 gap-2">
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="hover:text-green-300 transition duration-300"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      <!-- Mobile menu Button -->
+      <div class="md:hidden">
+        <button id="buttonToggle" class="focus:outline-none">
+          <svg
+            class="w-10 h-10 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+    <main class="main-container">
+      <!-- Hero section goes here -->
+      <section
+        class="relative w-full h-[80vh] overflow-hidden bg-[#021002] ubuntu"
+      >
+        <div
+          id="carousel"
+          class="relative flex items-center justify-center h-full transition-transform duration-700 ease-in-out"
+        >
+          <!-- Slide 1 -->
+          <div
+            class="slide relative shrink-0 w-[80%] md:w-[60%] h-[70vh] mx-1 transition-all duration-700 ease-in-out opacity-100 scale-100 z-20"
+          >
+            <img
+              src="./Wologisi_FC/wologisi/hightlight1.jpg"
+              alt="Match 1"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white"
+            >
+              <h2 class="text-xl md:text-3xl font-bold uppercase mb-2">
+                Wologisi FC defeats Nimba 1:0
+              </h2>
+              <p class="text-green-300 text-sm mb-1">Sept 23, 2025</p>
+              <p class="text-sm md:text-base max-w-xl">
+                Advances to the final after a thrilling semi-final clash.
+              </p>
+            </div>
+          </div>
+          <!-- Slider 2 -->
+          <div
+            class="slide relative shrink-0 w-[80%] md:w-[60%] h-[70vh] mx-1 transition-all duration-700 ease-in-out opacity-100 scale-100 z-20"
+          >
+            <img
+              src="./Wologisi_FC/wologisi/training.jpg"
+              alt="Match 1"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white"
+            >
+              <h2 class="text-xl md:text-3xl font-bold uppercase mb-2">
+                Wologisi FC training session
+              </h2>
+              <p class="text-green-300 text-sm mb-1">Sept 25, 2025</p>
+              <p class="text-sm md:text-base max-w-xl">
+                The team gears up with focus and determination for the final
+                showdown.
+              </p>
+            </div>
+          </div>
+          <!-- slider 3 -->
+          <div
+            class="slide relative shrink-0 w-[80%] md:w-[60%] h-[70vh] mx-1 transition-all duration-700 ease-in-out opacity-100 scale-100 z-20"
+          >
+            <img
+              src="./Wologisi_FC/wologisi/FB_IMG_1758833684236.jpg"
+              alt="Match 1"
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white"
+            >
+              <h2 class="text-xl md:text-3xl font-bold uppercase mb-2">
+                Wologisi fans celebrate victory
+              </h2>
+              <p class="text-green-300 text-sm mb-1">Sept 27, 2025</p>
+              <p class="text-sm md:text-base max-w-xl">
+                A night of celebration as supporters cheered their heroes&apos;
+                win.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Slider navigation Arrows -->
+        <button
+          id="prev"
+          class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-30"
+        >
+          &#10094;
+        </button>
+        <button
+          id="next"
+          class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-30"
+        >
+          &#10095;
+        </button>
+      </section>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+      <!-- Next match countdown -->
+      <section
+        
+      >
+     <h1 class=" font-bold text-green-950 text-center text-2xl pb-10 pt-3 "> Contact Us </h1>
+     <div class=" grid grid-cols-2 gap-6 bg-gray-100 ">
 
-            <button type="submit">Send Message</button>
-        </form>
-    </div>   
+<div class=" pl-30 Contact form " >
+  <h1 class="font-bold hover:underline text-center -pb-10 mt-20 text-2xl"> Get in Touch </h1>
+  <form action="#">
+    <div class="flex flex-col p-30 mb-6">
+        <input class="pl-4 placeholder-gray-500 border-b-2 mb-6 outline-0" type="text" for="name" placeholder="Your name">
+        <input class="pl-4 placeholder-gray-500 border-b-2 mb-6 outline-0" type="email" for="email" placeholder="Your email">
+        <input class="pl-4 placeholder-gray-500 border-b-2 mb-6 outline-0" type="number" for="number" placeholder="Your number">
+        <textarea class="pl-4 placeholder-gray-500 border-b-2 mb-6 outline-0 h-50 " for="Message" placeholder="Enter your message here"></textarea>
+        <button type="submit" class="text-white bg-green-950 w-30 h-10 rounded ">submit</button>
+  </div>
+      </div>
+      </form>
+      <div class="image">
+          <img class="absolute right-50 h-100 mt-40" src="../Wologisi_FC/wologisi/FB_IMG_1758833672573.jpg">
+
+    
+     </div> 
+
+      
+      </section>
+
+      
+
+    </main>
+
+    <footer class="bg-[#001200] text-gray-300 font-sans anton">
+      <!-- Partners Section -->
+      <div class="text-gray-800 py-16 px-6 md:px-16">
+        <h2 class="text-2xl md:text-3xl text-white text-center uppercase mb-4">
+          Our Partners
+        </h2>
+        <p class="mb-8 poppins text-center text-white">
+          Wologisi FC is proud to be supported by our corporate partners who
+          share our commitment to excellence. Our partnerships strengthen the
+          bond between football and community, creating a platform for shared
+          success. We extend our gratitude to all our sponsors for their
+          valuable contributions to the Dubai United FC family.
+        </p>
+
+        <!-- Partner Logos -->
+        <div class="relative w-full overflow-hidden">
+          <div
+            class="flex flex-wrap justify-center items-center gap-10 md:gap-16 mt-10 animate-marquee whitespace-nowrap"
+          >
+            <div class="flex items-center gap-16 marquee-group">
+              <img
+                src="./Wologisi_FC/partners/1xbet.png"
+                alt="Partner 1"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/betto.png"
+                alt="Partner 2"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/img.jpg"
+                alt="Partner 3"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/starbet.webp"
+                alt="Partner 4"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/images.png"
+                alt="Partner 4"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div class="flex items-center gap-16 marquee-group">
+              <img
+                src="./Wologisi_FC/partners/1xbet.png"
+                alt="Partner 1"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/betto.png"
+                alt="Partner 2"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/img.jpg"
+                alt="Partner 3"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/starbet.webp"
+                alt="Partner 4"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <img
+                src="./Wologisi_FC/partners/images.png"
+                alt="Partner 4"
+                class="h-12 md:h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Navigation -->
+      <div
+        class="py-16 px-6 md:px-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 border-t border-gray-700"
+      >
+        <div>
+          <h3 class="text-2xl text-white mb-4 uppercase">
+            WFC
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-white text-lg text-white"
+                >Wologisi Fc</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Media -->
+        <div>
+          <h3 class="text-2xl text-white mb-4 uppercase">
+            Media
+          </h3>
+          <ul class="space-y-2 poppins">
+            <li><a href="#" class="hover:text-green-400">Video</a></li>
+            <li><a href="#" class="hover:text-green-400">Calendar</a></li>
+            <li>
+              <a href="#" class="hover:text-green-400">League Table</a>
+            </li>
+            <li><a href="#" class="hover:text-green-400">Schedule</a></li>
+            <li><a href="#" class="hover:text-green-400">Results</a></li>
+          </ul>
+        </div>
+
+        <!-- Club -->
+        <div>
+          <h3 class=" text-white mb-4 uppercase text-2xl">
+            Club
+          </h3>
+          <ul class="space-y-2 poppins">
+            <li><a href="#" class="hover:text-green-400">Contact Us</a></li>
+            <li><a href="#" class="hover:text-green-400">Team</a></li>
+            <li><a href="#" class="hover:text-green-400">First Team</a></li>
+            <li><a href="#" class="hover:text-green-400">Second Team</a></li>
+          </ul>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <h3 class="text-2xl text-white mb-4 uppercase">
+            Info
+          </h3>
+          <ul class="space-y-2 poppins">
+            <li>
+              <a href="#" class="hover:text-green-300 duration-200 transition-all ease-in-out">Terms & Conditions</a>
+            </li>
+            <li><a href="#" class="hover:text-green-300 duration-200 transition-all ease-in-out">Legal Terms</a></li>
+            <li>
+              <a href="#" class="hover:text-green-300 duration-200 transition-all ease-in-out">Privacy Policy</a>
+            </li>
+            <li><a href="#" class="hover:text-green-300 duration-200 transition-all ease-in-out">Cookies</a></li>
+            <li>
+              <a href="#" class="hover:text-green-300 duration-200 transition-all ease-in-out">Accessibility</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-300 duration-200 transition-all ease-in-out">Support / FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="border-t border-gray-700 text-center py-6 px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <p class="text-sm text-white">
+          &copy; 2025 Wologisi FC. All Rights Reserved.
+        </p>
+        <div class="flex gap-4">
+          <a
+            href="#"
+            class="text-white hover:text-green-300 duration-200 ease-in-out transition-all"
+            ><i class="fa-brands fa-facebook"></i></a
+          >
+          <a
+            href="#"
+            class="text-white hover:text-green-300 duration-200 ease-in-out transition-all"
+            ><i class="fa-brands fa-instagram"></i></a
+          >
+          <a
+            href="#"
+            class="text-white hover:text-green-300 duration-200 ease-in-out transition-all"
+            ><i class="fa-brands fa-youtube"></i></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
   </body>
 </html>
